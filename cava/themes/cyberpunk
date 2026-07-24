@@ -1,0 +1,12 @@
+[color]
+
+; Background color matching your deep background theme (#030305)
+background = '#030305'
+
+; Foreground color scheme (gradient from primary crimson to high-neon accent pink)
+gradient = 1
+
+gradient_color_1 = '#B3002A' ; primaryContainer (Dark crimson base)
+gradient_color_2 = '#FF003C' ; primary (Vibrant crimson mid-tone)
+gradient_color_3 = '#FF3360' ; outline (Bright neon accent)
+gradient_color_4 = '#FF007F' ; secondary (Cyberpunk hot pink peak)

@@ -1,0 +1,39 @@
+// Apply blur and opacity to ALL applications globally
+window-rule {
+    match app-id=r#".*"#
+    
+    // Make all apps translucent so the blur is visible
+    opacity 0.85 
+    
+    background-effect {
+        blur true
+        xray false 
+    }
+}
+
+// Separate rule for popups across all apps
+window-rule {
+    match app-id=r#".*"#
+        
+    popups {
+        geometry-corner-radius 12
+        opacity 0.7
+        background-effect {
+            blur true
+            xray false
+        }
+    }
+}
+
+// Specific override rule for Zen Browser
+window-rule {
+    draw-border-with-background false
+    match app-id="zen"
+    
+    // Zen will keep these settings, matching the global style
+    opacity 0.85 
+    background-effect {
+        blur true
+        xray false
+    }
+}
